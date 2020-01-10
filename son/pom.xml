@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mavenSon</groupId>
+  <artifactId>son</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  	<dependency>
+  		 <groupId>junit</groupId>
+		 <artifactId>junit</artifactId>
+  	</dependency>
+  </dependencies>
+  <parent>
+    <!-- 加入父工程的gav,如果相同可省略 -->
+  	<groupId>mavenFather</groupId>
+  	<artifactId>Father</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  	<!-- 找到父工程的pom -->
+  	<relativePath>../Son/pom.xml</relativePath>
+  </parent>
+</project>
